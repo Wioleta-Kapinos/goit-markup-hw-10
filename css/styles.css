@@ -11,12 +11,12 @@ body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: var(--black);
 }
-.logo-header {
+.logo {
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     width: auto;
     text-align: left;
     text-decoration: none;
@@ -25,30 +25,34 @@ body {
 .studio-header {
     color: var(--black)
 }
-.links a {
+.list {
+    list-style-type: none;
+}
+.list a {
     color: var(--black);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
     width: auto;
     text-align: left;
     text-decoration: none;
 }
-.links a.links-agency:hover,
-.links a.links-agency:focus,
-.links a.links-portfolio:hover,
-.links a.links-portfolio:focus,
-.links a.links-contact:hover,
-.links a.links-contact:focus {
+.list a.links-agency:hover,
+.list a.links-agency:focus,
+.list a.links-portfolio:hover,
+.list a.links-portfolio:focus,
+.list a.links-contact:hover,
+.list a.links-contact:focus {
     color: var(--blue);
 }
-.email-header {
+.list .email-header,
+.list .phone-header {
     color: var(--gray);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
     width: auto;
     text-align: left;
     text-decoration: none;
@@ -59,22 +63,12 @@ body {
 .phone-header:focus {
     color: var(--blue);
 }
-.phone-header {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02;
-    width: auto;
-    text-align: left;
-    text-decoration: none;
-    color: var(--gray);
-}
 .div-heading {
     background-color: var(--darkgray);
     color: var(--white);
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
     height: auto;
     text-align: center;
 }
@@ -84,7 +78,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
     width: auto;
     text-align: center;
     cursor: pointer;
@@ -97,14 +91,15 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     height: auto;
     text-align: left;
+    list-style-type: none;
 }
 .paragraph {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     text-align: left;
     color: var(--gray);
 }
@@ -113,7 +108,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     width: auto;
     text-align: center;
 }
@@ -121,14 +116,14 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     width: auto;
     text-align: center;
 }
 .department {
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     width: auto;
     text-align: center;
     color: var(--gray);
@@ -136,24 +131,13 @@ body {
 .footer {
     background-color: var(--darkgray);
 }
-.logo-footer {
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.19;
-    letter-spacing: 0.03;
-    width: auto;
-    text-align: left;
-    color: var(--blue);
-    text-decoration: none;
-}
 .studio-footer {
     color: var(--white);
 }
 .address {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     height: auto;
     text-align: left;
     color: var(--white);
@@ -175,10 +159,11 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     width: auto;
     text-align: center;
     cursor: pointer;
+    list-style-type: none;
 }
 .div-button:hover,
 .div-button:focus {
@@ -189,14 +174,14 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
     height: auto;
     text-align: left;
 }
 .paragraph-img {
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     height: auto;
     text-align: left;
     color: var(--gray);
