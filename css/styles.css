@@ -16,9 +16,11 @@
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: var(--black);
+    width: 1600px;
 }
 .container {
     width: 1200px;
+    margin: 0 auto;
 }
  *,
  *::before,
@@ -32,10 +34,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: var(--white);
-    width: 1600px;
-    height: 80px;
     border-bottom: 1px solid var(--foggy);
-    margin-right: 215px;
 }
 .logo {
     font-family: 'Raleway';
@@ -43,11 +42,11 @@ body {
     font-weight: 700;
     line-height: 1.19;
     letter-spacing: 0.03rem;
-    width: 145px;
     text-align: left;
     text-decoration: none;
     color: var(--blue);
-    margin-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .studio-header {
     color: var(--black)
@@ -58,8 +57,9 @@ body {
     display: flex;    
 }
 .nav-list {
-    margin-left: 93px;
-    width: 254px;
+    padding-left: 93px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .nav-list a {
     color: var(--black);
@@ -69,7 +69,7 @@ body {
     letter-spacing: 0.02rem;
     text-align: left;
     text-decoration: none;
-    margin-right: 46px;
+    padding-right: 46px;
 }
 .nav-list a.links-agency:hover,
 .nav-list a.links-agency:focus,
@@ -90,12 +90,10 @@ body {
     text-decoration: none;
 }
 .email-header {
-    width: 135px;
-    margin-left: 371px;
+    padding-left: 325px;
 }
 .phone-header {
-    width: 110px;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 .email-header:hover,
 .email-header:focus,
@@ -116,8 +114,6 @@ body {
 }
 .div {
     background-color: var(--darkgray);
-    width: 1600px;
-    height: 600px;
     display: flex;
     justify-content: center;
 }
@@ -128,7 +124,6 @@ body {
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06rem;
-    width: auto;
     text-align: center;
     cursor: pointer;
     padding: 10px 41px 10px 42px;
@@ -137,7 +132,8 @@ body {
     border: none;
     margin-top: 350px;
     margin-bottom: 200px;
-    position:absolute;
+    position: absolute;
+    
 }
 .btn:hover,
 .btn:focus {
@@ -148,9 +144,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    width: 1170px;
-    margin-top: 94px;
-    margin-left: 215px;
+    padding-top: 94px;
 }
 .item {
     flex-basis: calc((100% - 90px) / 4);
@@ -163,7 +157,6 @@ body {
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03rem;
-    height: auto;
     text-align: left;
     list-style-type: none;
 }
@@ -180,31 +173,25 @@ body {
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 0.03rem;
-    width: auto;
     text-align: center;
 }
 .team {
     background-color: var(--lightgray);
-    width: 1600px;
-    height: 648px;
+    padding-bottom: 94px;
 }
 img {
     display: block;
 }
 .section-one-heading {
     padding-top: 94px;  
-    margin-left: 624px;
-    width: 352px;
 }
 .first-list {
     display:flex;
     list-style-type: none;
-    width: 1170px;
-    justify-content: space-between;
     gap: 30px;
-    margin-left: 215px;
     padding-top: 50px;
     padding-bottom: 94px;
+    justify-content: space-between;
 }
 .section-two-heading {
     padding-top: 94px;
@@ -213,13 +200,11 @@ img {
 .second-list {
     display: flex;
     list-style-type: none;
-    width: 1170px;
     gap: 30px;
-    margin-left: 215px;
+    justify-content: space-between;
 }
 .box {
     background-color: var(--white);
-    height: 108px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px var(--darktwo), 0px 1px 1px var(--darkthree), 0px 2px 1px var(--darkfour);
 }
@@ -228,7 +213,6 @@ img {
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.03rem;
-    width: auto;
     text-align: center;
     padding: 30px 0 10px 0;
 }
@@ -236,35 +220,31 @@ img {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03rem;
-    width: auto;
     text-align: center;
     color: var(--gray);
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .footer {
     background-color: var(--darkgray);
-    width: 1600px;
-    height: 252px;
     display: flex;
     flex-direction: column;
-    justify-content:center
+    justify-content: center;
 }
 .studio-footer {
     color: var(--white);
 }
 .footer >.logo {
-    margin-left: 215px;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 .address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03rem;
-    height: 81px;
     text-align: left;
     color: var(--white);
     font-style: normal;
-    margin-left: 215px;
-    padding-top: 20px;
+    padding-bottom: 60px;
 }
 .email-footer,
 .phone-footer {
@@ -283,7 +263,6 @@ img {
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03rem;
-    width: auto;
     text-align: center;
     cursor: pointer;
     border-radius: 4px;
@@ -297,47 +276,43 @@ img {
 }
 .list-button {
     display: flex;
-    justify-content:flex-start;
+    justify-content: center;
     list-style-type: none;
     gap: 8px;
-    margin-left: 510px;
-    margin-top: 94px;
+    padding-top: 94px;
 }
 .list-card {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     list-style-type: none;
-    margin-left: 215px;
-    width: 1170px;
-    margin-top: 34px;
-    margin-bottom: 94px;
-    border-bottom: 1px solid var(--light);
+    padding-top: 34px;
+    padding-bottom: 94px;
 }
 .card {
     flex-basis: calc((100% - 60px) / 3);
 }
 .description {
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
     width: 370px;
-    height: 110px;
-    border: 1px solid var(--light);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .heading-img {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06rem;
-    height: auto;
     text-align: left;
-    padding-top: 20px;
-    margin-left: 24px;
+    padding-left: 24px;
 }
 .paragraph-img {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03rem;
-    height: auto;
     text-align: left;
     color: var(--gray);
-    margin-left: 24px;
+    padding-left: 24px;
 }
