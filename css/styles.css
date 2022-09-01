@@ -20,7 +20,7 @@ body {
 }
 .container {
     width: 1170px;
-    padding: 0 15px;
+    padding: 0;
     margin: 0 auto;
 }
  *,
@@ -33,10 +33,10 @@ body {
 .page-header {
     border-bottom: 1px solid var(--foggy);
     padding-top: 32px; 
+    padding-bottom: 32px;
 }
 .nav {
     display: flex;
-    padding-bottom: 32px;
 }
 .logo {
     font-family: 'Raleway';
@@ -125,10 +125,9 @@ body {
     box-shadow: 0px 4px 4px var(--darkone);
     border-radius: 4px;
     border: none;
-    margin-top: 350px;
+    margin-top:350px;
     margin-bottom: 200px;
     position: absolute;
-    
 }
 .btn:hover {
     border: 1px solid var(--blue);
@@ -136,12 +135,9 @@ body {
 .div-list {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 30px;
     padding-top: 94px;
-}
-.item {
-    flex-basis: calc((100% - 90px) / 4);
 }
 .item p {
     padding-top: 10px;
