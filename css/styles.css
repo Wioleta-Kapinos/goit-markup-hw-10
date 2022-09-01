@@ -19,7 +19,8 @@ body {
     width: 1600px;
 }
 .container {
-    width: 1200px;
+    width: 1170px;
+    padding: 0 15px;
     margin: 0 auto;
 }
  *,
@@ -30,11 +31,12 @@ body {
     padding: 0;
 }
 .page-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: var(--white);
     border-bottom: 1px solid var(--foggy);
+    padding-top: 32px; 
+}
+.nav {
+    display: flex;
+    padding-bottom: 32px;
 }
 .logo {
     font-family: 'Raleway';
@@ -45,21 +47,20 @@ body {
     text-align: left;
     text-decoration: none;
     color: var(--blue);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-right: 93px;
 }
 .studio-header {
     color: var(--black)
 }
-.nav-list,
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 .list-contact {
     list-style-type: none;
-    display: flex;    
-}
-.nav-list {
-    padding-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;
+    justify-content: flex-end;
 }
 .nav-list a {
     color: var(--black);
@@ -71,12 +72,9 @@ body {
     text-decoration: none;
     padding-right: 46px;
 }
-.nav-list a.links-agency:hover,
-.nav-list a.links-agency:focus,
-.nav-list a.links-portfolio:hover,
-.nav-list a.links-portfolio:focus,
-.nav-list a.links-contact:hover,
-.nav-list a.links-contact:focus {
+.links-agency:hover,
+.links-portfolio:hover,
+.links-contact:hover {
     color: var(--blue);
 }
 .list-contact .email-header,
@@ -90,15 +88,12 @@ body {
     text-decoration: none;
 }
 .email-header {
-    padding-left: 325px;
+    padding-left: 310px;
 }
 .phone-header {
     padding-left: 50px;
 }
-.email-header:hover,
-.email-header:focus,
-.phone-header:hover,
-.phone-header:focus {
+.email-header:hover {
     color: var(--blue);
 }
 .div-heading {
@@ -112,10 +107,8 @@ body {
     padding-top: 200px;
     padding-bottom: 280px;
 }
-.div {
+.div .container {
     background-color: var(--darkgray);
-    display: flex;
-    justify-content: center;
 }
 .btn {
     background-color: var(--blue);
@@ -135,8 +128,7 @@ body {
     position: absolute;
     
 }
-.btn:hover,
-.btn:focus {
+.btn:hover {
     border: 1px solid var(--blue);
 }
 .div-list {
@@ -229,13 +221,10 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 60px;
 }
 .studio-footer {
     color: var(--white);
-}
-.footer >.logo {
-    padding-top: 60px;
-    padding-bottom: 20px;
 }
 .address {
     font-size: 14px;
@@ -244,6 +233,7 @@ img {
     text-align: left;
     color: var(--white);
     font-style: normal;
+    padding-top: 20px;
     padding-bottom: 60px;
 }
 .email-footer,
@@ -251,10 +241,7 @@ img {
     color: var(--transparent);
     text-decoration: none;
 }
-.email-footer:hover,
-.email-footer:focus,
-.phone-footer:hover,
-.phone-footer:focus {
+.email-footer:hover {
     color: var(--blue);
 }
 .div-button {
@@ -269,8 +256,7 @@ img {
     border: none;
     padding: 6px 22px;
 }
-.div-button:hover,
-.div-button:focus {
+.div-button:hover {
     background-color: var(--blue);
     color: var(--white);
 }
@@ -288,9 +274,6 @@ img {
     list-style-type: none;
     padding-top: 34px;
     padding-bottom: 94px;
-}
-.card {
-    flex-basis: calc((100% - 60px) / 3);
 }
 .description {
     border-left: 1px solid var(--light);
