@@ -107,8 +107,10 @@ body {
     padding-top: 200px;
     padding-bottom: 280px;
 }
-.div .container {
+.div {
     background-color: var(--darkgray);
+    display: flex;
+    justify-content: center;
 }
 .btn {
     background-color: var(--blue);
