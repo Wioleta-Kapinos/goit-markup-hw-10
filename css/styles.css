@@ -58,12 +58,14 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-left: 93px;
 }
 .list-contact {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .nav-list a {
     color: var(--black);
@@ -109,13 +111,15 @@ body {
 .phone-header:focus {
     color: var(--blue);
 }
-.icon-contact:hover,
-.icon-contact:focus {
+.phone-header:hover .icon-contact,
+.phone-header:focus .icon-contact,
+.email-header:hover .icon-contact,
+.email-header:focus .icon-contact {
     fill: var(--blue);
 }
 .page {
     background-color: var(--darkgray);
-    background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/new-photo.jpg);
+    background-image: linear-gradient(var(--gradient), var(--gradient)), url("../images/new-photo.jpg");
     max-width: 1600px;
 }
 .main-page {
