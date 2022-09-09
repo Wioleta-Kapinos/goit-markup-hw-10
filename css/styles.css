@@ -26,6 +26,9 @@ body {
     padding: 0;
     margin: 0 auto;
 }
+*:focus {
+    outline: dotted;
+}
  *,
  *::before,
  *::after {
@@ -302,7 +305,7 @@ img {
     flex-wrap: wrap;
     gap: 30px;
     list-style-type: none;
-    padding-top: 34px;
+    padding-top: 50px;
     padding-bottom: 94px;
 }
 .card:hover {
@@ -313,9 +316,7 @@ img {
     border-left: 1px solid var(--light);
     border-right: 1px solid var(--light);
     border-bottom: 1px solid var(--light);
-    width: 370px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
 }
 .icon-item {
     background-color: var(--lightgray);
@@ -331,7 +332,6 @@ img {
     line-height: 2;
     letter-spacing: 0.06rem;
     text-align: left;
-    padding-left: 24px;
 }
 .paragraph-img {
     font-size: 16px;
@@ -339,7 +339,6 @@ img {
     letter-spacing: 0.03rem;
     text-align: left;
     color: var(--gray);
-    padding-left: 24px;
 }
 .icon-team {
     list-style-type: none;
@@ -388,8 +387,8 @@ img {
     height: 92px;
     fill: var(--lightnext);
 }
-.icon-logo:hover,
-.icon-logo:focus {
+.client:hover .icon-logo,
+.client:focus .icon-logo {
     fill: var(--blue);
     border-color: var(--blue);
 }
