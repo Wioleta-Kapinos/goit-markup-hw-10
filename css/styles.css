@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
 }
 *:focus {
-    outline: dotted;
+    outline: none;
 }
  *,
  *::before,
