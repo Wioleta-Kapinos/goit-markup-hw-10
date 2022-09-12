@@ -15,6 +15,7 @@
     --darkfour: rgba(0, 0, 0, 0.2);
     --gradient: rgba(47, 48, 58, 0.4);
     --lightnext: #AFB1B8;
+    --bluenext: rgba(33, 150, 243, 0.9);
 }
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
@@ -388,11 +389,12 @@ img {
     position: relative;
     overflow: hidden;
 }
-.card:hover .hidden-view {
+.card:hover .hidden-view,
+.card:focus .hidden-view {
     transform: translateY(-100%);
 }
 .hidden-view {
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: var(--bluenext);
     position: absolute;
     padding-top: 49px;
     padding-left: 24px;
@@ -560,7 +562,7 @@ img {
     align-items: flex-start;
     padding-top: 8px;
     padding-right: 8px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn {
     position: absolute;
@@ -574,7 +576,11 @@ img {
     align-items: center;
     padding: 8px;
     cursor: pointer;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
     transform: scale(1.25);
 }
