@@ -343,7 +343,7 @@ img {
     border-radius: 4px;
     border: none;
     padding: 6px 22px;
-    transition-property: color;
+    transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -369,7 +369,7 @@ img {
     padding-bottom: 94px;
 }
 .card {
-    transition-property: color;
+    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -388,7 +388,7 @@ img {
     position: relative;
     overflow: hidden;
 }
-.hidden-container:hover .hidden-view {
+.card:hover .hidden-view {
     transform: translateY(-100%);
 }
 .hidden-view {
@@ -449,7 +449,7 @@ img {
     border-radius: 50%;
     background-color: var(--white);
     fill: var(--lightnext);
-    transition-property: fill, color;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -483,7 +483,7 @@ img {
     fill: var(--lightnext);
 }
 .client .icon-logo {
-    transition-property: fill;
+    transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -520,7 +520,7 @@ img {
     border-radius: 50%;
     fill: var(--white);
     background-color: var(--transnext);
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -548,23 +548,28 @@ img {
     position: absolute;
     width: 528px;
     height: 581px;
-    top: 221px;
-    left: 536px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--white);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px ,rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.icon-close {
+    background-color: var(--white);
 }
 .close-btn: {
+    box-sizing: border-box;
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 8px;
-    right: 8px;
     background-color: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    display: flex; 
-}
-.close-btn:hover {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
