@@ -310,14 +310,22 @@ img {
 .studio-footer {
     color: var(--white);
 }
-.address {
+.address,
+.contact-footer {
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.03em;
     text-align: left;
     color: var(--white);
     font-style: normal;
-    margin-top: 20px;
+    list-style-type: none;
+}
+.address {
+    padding: 20px 0 9px 0;
+}
+.phone-footer {
+    margin-top: 9px;
 }
 .email-footer,
 .phone-footer {
@@ -406,8 +414,8 @@ img {
 .hidden-text {
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.55em;
-    letter-spacing: 0.03;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
     color: var(--white);
     position: absolute;
     width: 301px;
@@ -501,7 +509,6 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     line-height: 1.14;
-    margin-bottom: 20px;
     padding-left: 60px;
     padding-top: 7px;
 }
@@ -555,7 +562,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--white);
-    box-shadow: 0px 1px 3px ,rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     display: flex;
     justify-content: flex-end;
@@ -583,4 +590,5 @@ img {
 .close-btn:hover,
 .close-btn:focus {
     transform: scale(1.25);
+    background-color: var(--lightgray);
 }
