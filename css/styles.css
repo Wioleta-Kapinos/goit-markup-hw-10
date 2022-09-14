@@ -37,6 +37,12 @@ body {
     margin: 0;
     padding: 0;
 }
+img {
+    display: block;
+}
+
+/* header */
+
 .page-header {
     border-bottom: 1px solid var(--foggy);
     padding-top: 32px; 
@@ -153,6 +159,8 @@ body {
 .email-header:focus .icon-contact {
     fill: var(--blue);   
 }
+
+/* main */
 .page {
     background-color: var(--darkgray);
     background-image: linear-gradient(var(--gradient), var(--gradient)), url("../images/new-photo.jpg");
@@ -197,6 +205,9 @@ body {
 .btn:focus {
     border: 1px solid var(--blue);
 }
+
+/* lorem ipsum */
+
 .div-list {
     list-style-type: none;
     display: flex;
@@ -223,26 +234,22 @@ body {
     text-align: left;
     color: var(--gray);
 }
-.section-one-heading,
-.section-two-heading {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 0.03rem;
-    text-align: center;
-}
-.team {
+.icon-item {
     background-color: var(--lightgray);
-    padding-bottom: 94px;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    padding-left: 100px;
+    padding-top: 30px;
 }
-img {
-    display: block;
-}
+
+/* what are we doing */
+
 .section-one-heading {
-    padding-top: 94px;  
+    padding-top: 94px;
 }
 .first-list {
-    display:flex;
+    display: flex;
     list-style-type: none;
     gap: 30px;
     padding-top: 50px;
@@ -255,7 +262,7 @@ img {
     justify-content: center;
     align-items: flex-end;
 }
-.box-label >.label {
+.box-label>.label {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.17;
@@ -267,6 +274,21 @@ img {
     padding: 27px 90px;
     position: absolute;
     background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* our team */
+
+.section-one-heading,
+.section-two-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+.team {
+    background-color: var(--lightgray);
+    padding-bottom: 94px;
 }
 .section-two-heading {
     padding-top: 94px;
@@ -303,9 +325,41 @@ img {
     color: var(--gray);
     padding-bottom: 30px;
 }
+.icon-team {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white);
+    fill: var(--lightnext);
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon:hover,
+.icon:focus {
+    fill: var(--white);
+    background-color: var(--blue);
+}
+
+/* footer */
+
 .footer {
     background-color: var(--darkgray);
     padding: 60px 0;
+}
+.footer .container {
+    display: flex;
 }
 .studio-footer {
     color: var(--white);
@@ -326,6 +380,7 @@ img {
 }
 .phone-footer {
     margin-top: 9px;
+    display: block;
 }
 .email-footer,
 .phone-footer {
@@ -341,6 +396,47 @@ img {
 .phone-footer:focus {
     color: var(--blue);
 }
+
+/* social links in footer */
+
+.social-links {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    padding-left: 60px;
+    padding-top: 7px;
+}
+.social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--white);
+    background-color: var(--transnext);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon:hover,
+.footer-icon:focus {
+    background-color: var(--blue);
+}
+
+/* buttons in portfolio */
+
 .div-button {
     background-color: var(--lightgray);
     font-size: 16px;
@@ -369,6 +465,9 @@ img {
     gap: 8px;
     padding-top: 94px;
 }
+
+/* cards list in portfolio */
+
 .list-card {
     display: flex;
     flex-wrap: wrap;
@@ -420,14 +519,6 @@ img {
     position: absolute;
     width: 301px;
 }
-.icon-item {
-    background-color: var(--lightgray);
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    padding-left: 100px;
-    padding-top: 30px;
-}
 .heading-img {
     font-size: 18px;
     font-weight: 700;
@@ -442,32 +533,9 @@ img {
     text-align: left;
     color: var(--gray);
 }
-.icon-team {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 30px;   
-}
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--white);
-    fill: var(--lightnext);
-    transition-property: fill, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon:hover,
-.icon:focus {
-    fill: var(--white);
-    background-color: var(--blue);
-}
+
+/* our clients */
+
 .section-three-heading {
     font-weight: 700;
     font-size: 36px;
@@ -502,44 +570,9 @@ img {
     fill: var(--blue);
     border-color: var(--blue);
 }
-.social-links {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--white);
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    line-height: 1.14;
-    padding-left: 60px;
-    padding-top: 7px;
-}
-.social-media {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px; 
-    padding-top: 20px;  
-}
-.footer-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: var(--white);
-    background-color: var(--transnext);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-icon:hover,
-.footer-icon:focus {
-    background-color: var(--blue);
-}
-.footer .container {
-    display: flex;
-}
+
+/* modal window */
+
 .backdrop {
     position: fixed;
     left: 0;
