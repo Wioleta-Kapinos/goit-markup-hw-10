@@ -405,7 +405,6 @@ img {
 .address,
 .contact-footer {
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-align: left;
@@ -603,7 +602,6 @@ img {
     transition: transform 250ms ease;
 }
 .hidden-text {
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
@@ -696,7 +694,6 @@ img {
 .label-modal {
     position: relative;
     font-size: 12px;
-    font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--gray);
@@ -717,7 +714,6 @@ img {
     padding: 12px 16px;
     color: rgba(117, 117, 117, 0.5);
     font-size: 12px;
-    font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.01em;
     height: 120px;
@@ -742,7 +738,6 @@ img {
 }
 .statement {
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--gray);
