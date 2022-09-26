@@ -1,0 +1,37 @@
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/button";
+@import "./components/footer";
+@import "./components/form";
+@import "./components/main-portfolio-list";
+@import "./components/main-portfolio";
+@import "./components/main-index";
+@import "./components/modal";
+@import "./components/section-clients";
+@import "./components/section-team";
+@import "./components/section";
+
+body {
+    font-family: $site-fonts;
+    color: $black-color;
+    width: 1600px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+*:focus {
+    outline: none;
+}

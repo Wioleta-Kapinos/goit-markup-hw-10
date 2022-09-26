@@ -1,0 +1,93 @@
+.footer {
+    background-color: $dark-gray-color;
+    padding: 60px 0;
+    .footer__container {
+        @include container;
+        display: flex;
+        .footer__address {
+            @include footer;
+            padding: 20px 0 9px 0;
+        }
+        .footer__list {
+            @include footer;
+            .footer-list__email {
+               @include email-phone;
+                &:hover,
+                &:focus {
+                    color: $blue-color;
+                }
+            }
+            .footer-list__phone {
+                margin-top: 9px;
+                display: block;
+                @include email-phone;
+                &:hover,
+                &:focus {
+                    color: $blue-color;
+                }
+            }
+        }
+        .footer__social-links {
+            font-size: get-size('body');
+            font-weight: 700;
+            color: $white-color;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            line-height: 1.14;
+            padding-left: 60px;
+            padding-top: 7px;
+        }
+        .footer_social-media {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            padding-top: 20px;
+            .footer__icon {
+                @include flex;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                fill: $white-color;
+                background-color: $trans-two;
+                transition-property: background-color;
+                @include transition;
+                &:hover,
+                &:focus {
+                    background-color: $blue-color;
+                }
+            }
+        }
+        .footer__newsletter {
+            font-size: get-size('body');
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $white-color;
+            padding-top: 9px;
+            padding-left: 78px;
+            padding-bottom: 20px;
+        }
+        .footer__input {
+            border: 1px solid $trans-three;
+            border-radius: 4px;
+            background-color: $dark-gray-color;
+            padding-left: 16px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: $trans-one;
+            margin-left: 78px;
+            margin-right: 12px;
+            width: 358px;
+            outline: none;
+            transition-property: border;
+            @include transition;
+            &:focus-within {
+                border: 1px solid $blue-color;
+            }
+        }
+
+    }
+}

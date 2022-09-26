@@ -1,0 +1,30 @@
+.main-portfolio__container {
+    @include container;
+    .main-portfolio__buttons-list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 8px;
+        padding-top: 94px;
+        .main-portfolio__button {
+            background-color: $light-gray-color;
+            font-size: get-size('button');
+            font-weight: 500;
+            line-height: 1.62;
+            letter-spacing: 0.03rem;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+            border: none;
+            padding: 6px 22px;
+            transition-property: color, background-color, box-shadow;
+            @include transition;
+            &:hover,
+            &:focus {
+                background-color: $blue-color;
+                color: $white-color;
+                box-shadow: 0px 3px 1px $dark-six, 0px 1px 2px $dark-ten, 0px 2px 2px $dark-two;
+            }
+        }
+    }
+}

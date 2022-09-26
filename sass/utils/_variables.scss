@@ -1,0 +1,48 @@
+$black-color: #212121;
+$white-color: #FFFFFF;
+$blue-color: #2196F3;
+$gray-color: #757575;
+$dark-gray-color: #2F303A;
+$light-gray-color: #F5F4FA;
+$trans-one: rgba(255, 255, 255, 0.6);
+$trans-two: rgba(255, 255, 255, 0.1);
+$trans-three: rgba(255, 255, 255, 0.3);
+$trans-four: rgba(117, 117, 117, 0.5);
+$foggy-color: #ECECEC;
+$light-color: #EEEEEE;
+$dark-one: rgba(0, 0, 0, 0.15);
+$dark-two: rgba(0, 0, 0, 0.12);
+$dark-three: rgba(0, 0, 0, 0.14);
+$dark-four: rgba(0, 0, 0, 0.2);
+$gradient-one: rgba(47, 48, 58, 0.4);
+$gradient-two: rgba(47, 48, 58, 0.8);
+$dark-five: rgba(33, 33, 33, 0.2);
+$dark-six: rgba(0, 0, 0, 0.1);
+$dark-seven: rgba(0, 0, 0, 0.2);
+$dark-eight: rgba(0, 0, 0, 0.16);
+$dark-nine: rgba(0, 0, 0, 0.06);
+$dark-ten: rgba(0, 0, 0, 0.08);
+$light-next: #AFB1B8;
+$blue-next: rgba(33, 150, 243, 0.9);
+
+
+$site-fonts: 'Roboto','Raleway', sans-serif;
+
+$font-size: (
+    "logo": 26px,
+    'body': 14px,
+ 'heading': 44px,
+  'button': 16px,
+    'team': 16px,
+ 'section': 36px,
+    'text': 18px,
+    'form': 20px,
+   'label': 12px,
+    'send': 17px,
+);
+
+@function get-size($key) {
+    @return map-get($font-size, $key);
+}
+
+

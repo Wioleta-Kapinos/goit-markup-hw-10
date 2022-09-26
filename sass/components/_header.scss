@@ -1,0 +1,10 @@
+.header {
+    border-bottom: 1px solid $foggy-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}  
+.header__container {
+    @include container;
+}
+
+

@@ -1,0 +1,63 @@
+@mixin container {
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+}
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin transition {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin contact {
+    color: $gray-color;
+    font-size: get-size('body');
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02rem;
+    text-align: left;
+    text-decoration: none;
+}
+@mixin button {
+    background-color: $blue-color;
+    color: $white-color;
+    font-size: get-size('button');
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px $dark-one;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+@mixin section {
+    font-size: get-size('section');
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+@mixin footer {
+    font-size: get-size('body');
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $white-color;
+    font-style: normal;
+    list-style-type: none;
+}
+@mixin email-phone {
+    color: $trans-one;
+    text-decoration: none;
+    transition-property: color;
+    @include transition;
+}
+@mixin input-text {
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid $dark-five;
+    width: 100%;
+}
