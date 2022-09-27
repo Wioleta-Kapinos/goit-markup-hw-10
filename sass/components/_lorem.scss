@@ -1,0 +1,35 @@
+.lorem {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 94px;
+}
+.lorem__item {
+    padding-top: 10px;
+}
+.lorem__icon {
+    background-color: $light-gray-color;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.lorem__heading {
+    font-size: get-size('body');
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    list-style-type: none;
+    padding-top: 30px;
+}
+.lorem__text {
+    font-size: get-size('body');
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $gray-color;
+    padding-top: 10px;
+}

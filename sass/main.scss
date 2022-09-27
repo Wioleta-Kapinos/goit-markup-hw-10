@@ -1,25 +1,34 @@
 @import "./utils/mixin";
 @import "./utils/variables";
 @import "./components/header";
-@import "./components/logo";
 @import "./components/nav";
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/contact";
+@import "./components/page-main";
 @import "./components/button";
+@import "./components/lorem";
+@import "./components/what-do";
+@import "./components/our-team";
+@import "./components/social-media";
+@import "./components/clients";
 @import "./components/footer";
-@import "./components/form";
-@import "./components/main-portfolio-list";
-@import "./components/main-portfolio";
-@import "./components/main-index";
+@import "./components/newsletter";
+@import "./components/backdrop";
 @import "./components/modal";
-@import "./components/section-clients";
-@import "./components/section-team";
-@import "./components/section";
+@import "./components/form";
+@import "./components/portfolio";
 
 body {
-    font-family: $site-fonts;
+    font-family: 'Roboto', 'Raleway', sans-serif;
     color: $black-color;
     width: 1600px;
 }
-
+.container {
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+}
 *,
 *::before,
 *::after {

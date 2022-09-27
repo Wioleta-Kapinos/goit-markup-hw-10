@@ -1,0 +1,92 @@
+.portfolio {
+    .portfolio__buttons-list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 8px;
+        padding-top: 94px;
+    }
+    .portfolio__button {
+        background-color: $light-gray-color;
+        font-size: get-size('button');
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.03rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+        padding: 6px 22px;
+        transition-property: color, background-color, box-shadow;
+        @include transition;
+        &:hover,
+        &:focus {
+            background-color: $blue-color;
+            color: $white-color;
+            box-shadow: 0px 3px 1px $dark-six, 0px 1px 2px $dark-ten, 0px 2px 2px $dark-two;
+        }
+    }
+    .portfolio__cards-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        list-style-type: none;
+        padding-top: 50px;
+        padding-bottom: 94px;
+    }
+    .portfolio__card {
+        transition-property: box-shadow;
+        @include transition;
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px $dark-two, 0px 4px 4px $dark-nine, 1px 4px 6px $dark-eight;
+            cursor: pointer;
+        }
+    }
+    .portfolio__overlay {
+        position: relative;
+        overflow: hidden;
+    }
+    .portfolio__overlay-view {
+        background-color: $blue-next;
+        position: absolute;
+        padding-top: 49px;
+        padding-left: 24px;
+        width: 100%;
+        height: 100%;
+        transform: translateY(0);
+        transition: transform 250ms ease;
+    }
+    .portfolio__overlay-text {
+        font-size: get-size('text');
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        color: $white-color;
+        position: absolute;
+        width: 301px;
+    }
+    .portfolio__card:hover .portfolio__overlay-view,
+    .portfolio__card:focus .portfolio__overlay-view {
+        transform: translateY(-100%);
+    }
+    .portfolio__description {
+        border-left: 1px solid $light-color;
+        border-right: 1px solid $light-color;
+        border-bottom: 1px solid $light-color;
+        padding: 20px 24px;
+    }
+    .portfolio__heading {
+        font-size: get-size('text');
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 0.06rem;
+        text-align: left;
+    }
+    .portfolio__paragraph {
+        font-size: get-size('team');
+        line-height: 1.87;
+        letter-spacing: 0.03rem;
+        text-align: left;
+        color: $gray-color;
+    }
+}

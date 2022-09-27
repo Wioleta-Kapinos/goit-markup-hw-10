@@ -1,0 +1,21 @@
+.social-media {
+    list-style-type: none;
+    @include flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.social-media__icon {
+    @include flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $white-color;
+    fill: $light-next;
+    transition-property: fill, background-color;
+    @include transition;
+    &:hover,
+    &:focus {
+        fill: $white-color;
+        background-color: $blue-color;
+    }
+}

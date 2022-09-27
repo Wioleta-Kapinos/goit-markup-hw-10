@@ -1,8 +1,3 @@
-@mixin container {
-    width: 1170px;
-    padding: 0;
-    margin: 0 auto;
-}
 @mixin flex {
     display: flex;
     justify-content: center;

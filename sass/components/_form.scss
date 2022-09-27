@@ -1,19 +1,21 @@
-.form__heading {
-    font-size: get-size('form');
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 12px; 
-} 
-.form__label {
-    position: relative;
-    font-size: get-size('label');
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $gray-color;
-    margin-top: 10px;
+.form {
+    .form__heading {
+        font-size: get-size('form');
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 12px; 
+    } 
+    .form__label {
+        position: relative;
+        font-size: get-size('label');
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: $gray-color;
+        margin-top: 10px;
+    }
     .form__input {
         margin-top: 4px;
         padding: 12px 0 12px 42px;
@@ -60,25 +62,25 @@
         @include flex;
         padding-top: 20px;
         padding-left: 8px;
-        .form__checkbox {
-            width: 0;
-            height: 0;
-            opacity: 0;
-        }
-        .form__icon-rectangle {
-            fill: none;
-            border-radius: 2px;
-            border: 2px solid $black-color;
-        }
-        .form__icon-vector {
-            transform: translateX(-120%);
-            border: none;
-        }
-        .form__checkbox:checked ~ .form__icon-rectangle {
-            border-radius: 2px;
-            border: 2px solid $blue-color;
-            background-color: $blue-color;
-        }
+    }
+    .form__checkbox {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    .form__icon-rectangle {
+        fill: none;
+        border-radius: 2px;
+        border: 2px solid $black-color;
+    }
+    .form__icon-vector {
+        transform: translateX(-120%);
+        border: none;
+    }
+    .form__checkbox:checked ~ .form__icon-rectangle {
+        border-radius: 2px;
+        border: 2px solid $blue-color;
+        background-color: $blue-color;
     }
     .form__statute {
         color: $blue-color;

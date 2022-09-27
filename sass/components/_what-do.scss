@@ -1,0 +1,33 @@
+.what-do {
+    .what-do__heading {
+        @include section;
+        padding-top: 94px;
+    }
+    .what-do__list {
+        display: flex;
+        list-style-type: none;
+        gap: 30px;
+        padding-top: 50px;
+        padding-bottom: 94px;
+        justify-content: space-between;
+    }
+    .what-do__item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .what-do__title {
+        font-size: get-size('body');
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $white-color;
+        text-transform: uppercase;
+        width: 370px;
+        padding: 27px 90px;
+        position: absolute;
+        background-color: $gradient-two;
+    }
+}

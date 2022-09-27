@@ -1,0 +1,38 @@
+.contact {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    .contact__email {
+        @include contact;
+        margin-left: 300px;
+        transition-property: color;
+        @include transition;
+        &:hover,
+        &:focus {
+            color: $blue-color;
+        }
+    }
+    .contact__phone {
+        @include contact;
+        margin-left: 40px;
+        transition-property: color;
+        @include transition;
+        &:hover,
+        &:focus {
+            color: $blue-color;
+        }
+    }
+    .contact__icon {
+        margin-right: 10px;
+        fill: $gray-color; 
+        transition-property: fill;
+        @include transition;
+    }
+    .contact__email:hover .contact__icon,
+    .contact__phone:hover .contact__icon,
+    .contact__email:focus .contact__icon,
+    .contact__phone:focus .contact__icon {
+        fill: $blue-color;
+    } 
+}   
