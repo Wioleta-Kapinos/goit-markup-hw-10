@@ -5,11 +5,12 @@
     margin-top:350px;
     margin-bottom: 200px;
     position: absolute;
-    transition-property: border;
+    transition-property: border, transform;
     @include transition;
     &:hover,
     &:focus {
         border: 1px solid $blue-color;
+        transform: scale(1.05);
     }
 }
 .button__footer {

@@ -1,6 +1,8 @@
 .page-main {
     background-color: $dark-gray-color;
-    background-image: linear gradient ($gradient-one, $gradient-one), url("../images/new-photo.jpg");
+    background-image: linear-gradient($gradient-one, $gradient-one), url("../images/new-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 1600px;
 }
 .page-main__title {

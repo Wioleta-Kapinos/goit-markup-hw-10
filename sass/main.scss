@@ -1,5 +1,6 @@
 @import "./utils/mixin";
 @import "./utils/variables";
+@import "./utils/common";
 @import "./components/header";
 @import "./components/nav";
 @import "./components/logo";
@@ -18,29 +19,3 @@
 @import "./components/modal";
 @import "./components/form";
 @import "./components/portfolio";
-
-body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
-    color: $black-color;
-    width: 1600px;
-}
-.container {
-    width: 1170px;
-    padding: 0;
-    margin: 0 auto;
-}
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    display: block;
-}
-
-*:focus {
-    outline: none;
-}
