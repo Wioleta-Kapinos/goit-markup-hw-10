@@ -33,3 +33,18 @@
     color: $gray-color;
     padding-top: 10px;
 }
+@media (max-width: 767px) {
+    .lorem__heading {
+        text-align: center;
+    }
+    .lorem {
+        padding-top: 60px;
+        display: block;
+        padding-bottom: 60px;
+    }
+    .lorem__icon {
+        width: 450px;
+        padding-left: 190px;
+        margin-top: 30px;
+    }
+}

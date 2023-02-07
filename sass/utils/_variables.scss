@@ -28,7 +28,7 @@ $blue-next: rgba(33, 150, 243, 0.9);
 $fonts-family: 'Roboto', 'Raleway', sans-serif;
 
 $font-size: (
-    "logo": 26px,
+    'logo': 26px,
     'body': 14px,
  'heading': 44px,
   'button': 16px,
@@ -38,6 +38,9 @@ $font-size: (
     'form': 20px,
    'label': 12px,
     'send': 17px,
+  'mobile': 40px,
+  'mobile-heading': 26px,
+  'mobile-team': 28px,
 );
 
 @function get-size($key) {

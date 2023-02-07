@@ -20,3 +20,30 @@
     padding-top: 200px;
     padding-bottom: 280px;
 }
+@media (max-width: 767px) {
+    .page-main__heading {
+        font-weight: 900;
+        font-size: get-size('mobile-heading');
+        line-height: 1.61;
+        margin: 0;
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        transform: translateY(-14%);
+    }
+}
+@media (max-width: 767px) {
+    .page-main {
+        background-image: linear-gradient($gradient-one, $gradient-one), url("../images/mobile1x-img.jpg");
+        background-repeat: no-repeat;
+        width: 480px;
+        height: 400px;
+    }
+}
+@media screen and (min-device-pixel-ratio:2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .page-main {
+            background-image: linear-gradient($gradient-one, $gradient-one), url("../images/mobile-img@2x.jpg");
+        }
+}

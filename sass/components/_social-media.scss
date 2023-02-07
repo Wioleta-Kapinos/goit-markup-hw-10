@@ -19,3 +19,8 @@
         background-color: $blue-color;
     }
 }
+@media (max-width: 767px) {
+    .social-media {
+        padding-bottom: 24px;
+    }
+}

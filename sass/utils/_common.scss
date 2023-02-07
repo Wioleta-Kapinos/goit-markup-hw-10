@@ -2,11 +2,17 @@ body {
     font-family: $fonts-family;
     color: $black-color;
     width: 1600px;
+    margin: 0 auto;
 }
 .container {
-    width: 1170px;
-    padding: 0;
-    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1170px;
+}
+@media (max-width: 767px) {
+    .container {
+        width: 480px;
+        padding: 0 15px;
+    }
 }
 *,
 *::before,
@@ -15,7 +21,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 img {
     display: block;
 }

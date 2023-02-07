@@ -1,54 +1,53 @@
 .footer {
     background-color: $dark-gray-color;
     padding: 60px 0;
-}
-.footer .container {
-    display: flex;
-}
-.footer__address {
-    @include footer;
-    padding: 20px 0 9px 0;
-}
-.footer__contact {
-    @include footer;   
-}
-.footer__email {
-    @include email-phone;
-    &:hover,
-    &:focus {
-        color: $blue-color;
+    & .container {
+        display: flex;
     }
-}
-.footer__phone {
-    margin-top: 9px;
-    display: block;
-    @include email-phone;
-    &:hover,
-    &:focus {
-        color: $blue-color;
+    &__address {
+        @include footer;
+        padding: 20px 0 9px 0;
     }
-}
-.footer__social-links {
-    font-size: get-size('body');
-    font-weight: 700;
-    color: $white-color;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    line-height: 1.14;
-    padding-left: 60px;
-    padding-top: 7px;
-}
-.footer__social-media {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    padding-top: 20px;
-}
-.footer__item {
-    list-style-type: none;
-}
-.footer__icon {
+    &__contact {
+        @include footer;   
+    }
+    &__email {
+        @include email-phone;
+        &:hover,
+        &:focus {
+            color: $blue-color;
+        }
+    }
+    &__phone {
+        margin-top: 9px;
+        display: block;
+        @include email-phone;
+        &:hover,
+        &:focus {
+            color: $blue-color;
+        }
+    }
+    &__social-links {
+        font-size: get-size('body');
+        font-weight: 700;
+        color: $white-color;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        line-height: 1.14;
+        padding-left: 60px;
+        padding-top: 7px;
+    }
+    &__social-media {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    &__item {
+        list-style-type: none;
+    }
+&__icon {
     @include flex;
     width: 44px;
     height: 44px;
@@ -61,4 +60,5 @@
     &:focus {
         background-color: $blue-color;
     }
+}
 }

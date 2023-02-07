@@ -34,6 +34,11 @@
                     </svg>+48 111 111 111</a></li>
             </ul>
             </nav>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-toggle__icon" width="24" height="16">
+                <use href="./images/icon.svg#icon-menu"></use>
+            </svg>
+        </button>
         </div>
     </header>
 
@@ -124,8 +129,8 @@
                 <ul class="our-team__list">
                     <li class="our-team__item">
                         <figure>
-                            <img src="./images/card1.jpg" alt="smiling man" 
-                            width="270" height="260"/>
+                            <img class="our-team__img" src="./images/card1.jpg" alt="smiling man" srcset="./images/card1@2.jpg"  
+                            width="270" height="260" />
                             <figcaption class="our-team__description">
                                 <p class="our-team__name"><b>John Doe</b></p>
                                 <p class="our-team__job">Product Designer</p>
@@ -164,7 +169,7 @@
                     </li>
                     <li class="our-team__item">
                         <figure>
-                            <img src="./images/card2.jpg" alt="smiling women"
+                            <img class="our-team__img" src="./images/card2.jpg" alt="smiling women" srcset="./images/card2@2.jpg"
                             width="270" height="260" />
                             <figcaption class="our-team__description">
                                 <p class="our-team__name"><b>John Doe</b></p>
@@ -204,7 +209,7 @@
                     </li>
                     <li class="our-team__item">
                         <figure>
-                            <img src="./images/card3.jpg" alt="man in a white shirt"
+                            <img class="out-team__img" src="./images/card3.jpg" alt="man in a white shirt" srcset="./images/card3@2.jpg"
                             width="270" height="260" />
                             <figcaption class="our-team__description">
                                 <p class="our-team__name"><b>John Doe</b></p>
@@ -244,7 +249,7 @@
                     </li>
                     <li class="our-team__item">
                         <figure>
-                            <img src="./images/card4.jpg" alt="man in a brown t-shirt"
+                            <img class="our-team__img" src="./images/card4.jpg" alt="man in a brown t-shirt" srcset="./images/card4@2.jpg"
                             width="270" height="260" />
                             <figcaption class="our-team__description">
                                 <p class="our-team__name"><b>John Doe</b></p>
@@ -285,7 +290,7 @@
                 </ul>
             </div>
         </section>
-        <section class="clients">
+        <!-- <section class="clients">
             <div class="container">
                 <h2 class="clients__heading">Nasi klienci</h2>
                 <ul class="clients__logo-list">
@@ -333,10 +338,10 @@
                 </li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </section> -->
+    <!-- </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div>
                 <a class="logo" href="./index.html">Web<span class="logo logo--light-color">Studio</span></a>
@@ -391,7 +396,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button-close" data-modal-close>   
@@ -441,6 +446,34 @@
             </form>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="18.7" height="18.7">
+                <use href="./images/icon.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a href="./index.html"
+                    class="mobile-menu__link mobile-menu__link--active">Agencja</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html"
+                    class="mobile-menu__link">Portfolio</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+        <div class="mobile-address">
+            <a class="mobile-address__phone" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="mobile-address__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <ul class="mobile-socials">
+            <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Instagram</a></li>
+            <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Twitter</a></li>
+            <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Facebook</a></li>
+            <li class="mobile-socials__item"><a class="mobile-socials__link" href="">LinkedIn</a></li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

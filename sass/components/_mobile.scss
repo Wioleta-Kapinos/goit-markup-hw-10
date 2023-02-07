@@ -1,0 +1,52 @@
+.menu-toggle {
+        position: absolute;
+        border: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-color: transparent;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        &:hover,
+        &:focus {
+            fill: $blue-color;
+        }
+    &__icon {
+        width: 24px;
+        height: 16px;
+        position: absolute;
+        cursor: pointer;
+        align-items: center;
+        fill: $black-color;
+    }
+}
+.menu-container {
+    position: fixed;
+
+}
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+.mobile-menu {
+    font-size: get-size('mobile');
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+    color: $black-color;
+    text-decoration: none;
+}
+.mobile-menu__item {
+    color: $black-color;
+    text-decoration: none;
+}
+.mobile-menu__link {
+    color: $black-color;
+    text-decoration: none;
+    &--active {
+        color: $blue-color;
+    }
+}

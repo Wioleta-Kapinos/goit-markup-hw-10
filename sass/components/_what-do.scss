@@ -31,3 +31,8 @@
         background-color: $gradient-two;
     }
 }
+@media (max-width: 767px) {
+    .what-do {
+        display: none;
+    }
+}
